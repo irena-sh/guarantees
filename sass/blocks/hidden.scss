@@ -1,0 +1,6 @@
+.hidden {
+  @media (max-width: $phones-max) {
+    display: none;
+    font-size: 0;
+  }
+}

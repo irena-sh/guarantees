@@ -1,0 +1,63 @@
+.logo__image {
+  &--header,
+  &--mobile {
+    display: block;
+    color: #ffffff;
+  }
+
+  &--tablet,
+  &--desktop {
+    display: none;
+  }
+
+  &:hover,
+  &:focus {
+    color: $orange;
+  }
+
+  &:active {
+    color: $orange;
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablets) {
+  .logo__image {
+
+    &--tablet {
+      display: block;
+    }
+
+    &--mobile,
+    &--desktop {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $desktops) {
+  .logo__image {
+
+    &--desktop {
+      display: block;
+    }
+
+    &--mobile,
+    &--tablet {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $desktops) {
+  .logo__image {
+    &--desktop {
+      display: block;
+    }
+
+    &--mobile,
+    &--tablet {
+      display: none;
+    }
+  }
+}

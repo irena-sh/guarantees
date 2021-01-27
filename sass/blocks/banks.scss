@@ -1,0 +1,473 @@
+.banks {
+  margin-bottom: 9px;
+  position: relative;
+  bottom: 60px;
+
+  @media (min-width: $tablets) {
+    margin-bottom: 40px;
+    padding-top: 63px;
+  }
+
+  @media (min-width: $desktops) {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 16px;
+    padding-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 942px;
+    bottom: 70px;
+  }
+}
+
+.banks__item {
+  padding-top: 13px;
+  margin-bottom: 8px;
+  box-shadow: 0px 4px 25px rgba(78, 32, 6, 0.25);
+  border-radius: 10px;
+
+  @media (min-width: $tablets) {
+    padding-bottom: 20px;
+  }
+
+  @media (min-width: $desktops) {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+}
+
+.banks__table {
+  padding-top: 24px;
+  border-bottom: 1px solid rgba(47,52,56, 0.25);
+  margin-left: 20px;
+  margin-right: 20px;
+
+  @media (min-width: $tablets) {
+    padding-top: 18px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: none;
+    margin-left: 28px;
+    margin-right: 33px;
+    border-bottom: 1px solid rgba(47,52,56, 0.25);
+    max-height: 115px;
+  }
+
+  @media (min-width: $desktops) {
+    border-bottom: none;
+    padding-top: 0;
+    margin-right: 5px;
+    padding-bottom: 1px;
+  }
+}
+
+.banks__table-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-bottom: 5px;
+
+  @media (min-width: $tablets) {
+    flex-direction: column;
+    padding-bottom: 25px;
+  }
+
+  @media (min-width: $desktops) {
+    padding-top: 17px;
+    padding-bottom: 32px;
+  }
+}
+
+.banks__table-wrapper--first {
+  padding-bottom: 27px;
+
+  @media (max-width: $phones-max) {
+    flex-direction: row-reverse;
+  }
+
+  @media (min-width: $tablets) {
+    padding-right: 21px;
+  }
+}
+
+.banks__item-logo {
+  display: block;
+  padding-right: 73px;
+
+  @media (min-width: $tablets) {
+    padding-right: 3px;
+  }
+
+  @media (min-width: $desktops) {
+    padding-right: 63px;
+  }
+}
+
+.banks__headline {
+  padding-left: 20px;
+  padding-bottom: 13px;
+  border-bottom: 1px solid rgba(217,136,94, 0.25);
+
+  @media (min-width: $tablets) {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 31px;
+    padding-bottom: 12px;
+    padding-top: 3px;
+  }
+
+  @media (min-width: $desktops) {
+    @include visually-hidden;
+    padding-bottom: 16px;
+    padding-top: 0;
+  }
+}
+
+.banks__item-title {
+  font-family: $font;
+  font-size: 12px;
+  line-height: 24px;
+  color: rgba(47,52,56, 0.45);
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @media (min-width: $tablets) {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: $font;
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: $desktops) {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+  }
+}
+
+.banks__item-price {
+  font-family: Lora;
+  font-size: 20px;
+  color: #D9885E;
+  position: relative;
+  bottom: 5px;
+
+  @media (min-width: $tablets) {
+    color: $black;
+    bottom: 5px;
+  }
+
+  @media (min-width: $desktops) {
+    padding-right: 63px;
+    padding-left: 0;
+  }
+}
+
+.banks__item-price--big {
+  padding-bottom: 32px;
+
+  @media (min-width: $desktops) {
+    padding-bottom: 37px;
+  }
+}
+
+.banks-item__lined {
+  font-size: 14px;
+  line-height: 30px;
+  text-decoration-line: line-through;
+  color: rgba(47,52,56, 0.5);
+
+  @media (min-width: $tablets) {
+    display: none;
+  }
+}
+
+.banks-item__time {
+  font-family: Lora;
+  font-size: 20px;
+  line-height: 30px;
+
+  @media (min-width: $desktops) {
+    padding-right: 49px;
+  }
+}
+
+.banks-item__minus {
+  // padding-right: 60px;
+  font-family: Lora;
+  font-size: 20px;
+  line-height: 30px;
+
+  @media (min-width: $tablets) {
+    padding-right: 0;
+    display: block;
+    background-image: url("../img/grey-minus.png");
+    background-repeat: no-repeat;
+    height: 38px;
+    width: 38px;
+    font-size: 0;
+  }
+
+  @media (min-width: $desktops) {
+    margin-top: 12px;
+  }
+}
+
+.banks-item__plus {
+  // padding-right: 40px;
+  font-family: Lora;
+  font-size: 20px;
+  line-height: 30px;
+
+  @media (min-width: $tablets) {
+    padding-right: 0;
+    display: block;
+    background-image: url("../img/grey-plus.png");
+    background-repeat: no-repeat;
+    height: 38px;
+    width: 38px;
+    font-size: 0;
+  }
+
+  @media (min-width: $desktops) {
+    margin-top: 9px;
+  }
+}
+
+.first-minus {
+  // padding-right: 35px;
+
+  @media (min-width: $desktops) {
+    padding-right: 78px;
+  }
+}
+
+.second-minus {
+  @media (min-width: $desktops) {
+    padding-right: 48px;
+  }
+}
+
+.banks-item__comission {
+  padding-right: 113px;
+}
+
+.banks-sale {
+  font-size: 14px;
+  color: #D9885E;
+  font-weight: bold;
+  margin: 0;
+  padding-top: 1px;
+
+  @media (min-width: $tablets) {
+    font-size: 15px;
+  }
+}
+
+.banks__wrapper {
+  @include container;
+  @media (min-width: $tablets) {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+   @media (min-width: $desktops) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.banks-item__order {
+  padding-top: 16px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $tablets) {
+    padding-bottom: 0;
+    padding-left: 27px;
+  }
+
+  @media (min-width: $desktops) {
+    padding-top: 44px;
+    padding-right: 0;
+    margin-right: 28px;
+    padding-left: 17px;
+  }
+}
+
+.banks-item__order-btn {
+  display: inline-block;
+  vertical-align: top;
+  border: none;
+  font-family: $font;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid #D9885E;
+  border-radius: 50px;
+  color: #D9885E;
+  background-color: transparent;
+  font-size: 15px;
+  line-height: 24px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 29px;
+  padding-right: 42px;
+
+  &:hover,
+  &:focus {
+      color: $white;
+      background-color: #D9885E;
+    }
+
+    &:active {
+      color: rgba($white, 0.3);
+    }
+
+  @media (min-width: $tablets) {
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 33px;
+    padding-right: 37px;
+  }
+
+  @media (min-width: $desktops) {
+  width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    border: none;
+    font-family: $font;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid #D9885E;
+    border-radius: 30px;
+    color: #D9885E;
+    background-color: transparent;
+    font-size: 15px;
+    line-height: 24px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+}
+
+.banks-ibox {
+  @media (min-width: $desktops) {
+    position: relative;
+    bottom: 15px;
+    padding-right: 195px;
+    padding-top: 0;
+  }
+}
+
+.banks-alliance {
+  @media (min-width: $desktops) {
+    padding-right: 155px;
+  }
+}
+
+.black {
+  color: #2F3438;
+}
+
+.covering {
+  @media (min-width: $desktops) {
+    padding-right: 28px;
+  }
+}
+
+.banks-hidden {
+  @media (max-width: $phones-max) {
+    display: none;
+    font-size: 0;
+  }
+}
+
+.squirrel {
+  @media (min-width: $desktops) {
+    padding-right: 73px;
+  }
+}
+
+.globe {
+  @media (min-width: $desktops) {
+    padding-right: 75px;
+  }
+}
+
+.plus-first {
+  @media (min-width: $desktops) {
+    padding-right: 75px;
+  }
+}
+
+.small {
+  @media (min-width: $desktops) {
+    padding-bottom: 0;
+  }
+}
+
+.smaller {
+  @media (min-width: $desktops) {
+    position: relative;
+    bottom: 10px;
+  }
+}
+
+.smallerr {
+  @media (min-width: $desktops) {
+    position: relative;
+    bottom: 6px;
+  }
+}
+
+.smalll {
+  @media (min-width: $desktops) {
+    position: relative;
+    bottom: 7px;
+  }
+}
+
+.second {
+  @media (width: $tablets) {
+    padding-right: 59px;
+  }
+}
+
+.hidden-bank {
+  @media (max-width: $tablets-max) {
+    display: none;
+    font-size: 0;
+  }
+}
+
+.banks-item--second {
+  padding-top: 10px;
+
+  @media (min-width: $tablets) {
+    padding-top: 6px;
+  }
+}
+
+.squirrel {
+  @media (min-width: $tablets) {
+    padding-right: 25px;
+    max-height: 116px;
+  }
+}
+
+.third {
+  padding-bottom: 27px;
+
+  @media (min-width: $tablets) {
+    padding-right: 25px;
+  }
+}

@@ -1,0 +1,38 @@
+.address {
+  padding-right: 64px;
+  padding-bottom: 22px;
+  font-family: Open Sans;
+  font-size: 14px;
+  line-height: 24px;
+  order: 2;
+
+  @media (min-width: $tablets) {
+  position: relative;
+  top: 80px;
+  right: 95px;
+  width: 240px;
+  // padding-left: 30px;
+  padding-right: 0;
+  padding-bottom: 34px;
+
+  &--form,
+  &--sucsess {
+    top: 1px;
+    right: 0;
+  }
+}
+
+  @media (min-width: $desktops) {
+    top: 1px;
+    width: 245px;
+    padding-left: 0;
+    margin-left: 70px;
+    order: 3;
+    right: 0;
+    margin-left: 32px;
+  }
+}
+
+.border {
+  border-bottom: 1px solid rgba(47,52,56, 0.25);
+}

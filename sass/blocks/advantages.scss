@@ -1,0 +1,151 @@
+.advantages {
+  background-color: rgba(244,244,238, 0.5);
+  padding-top: 65px;
+  padding-bottom: 65px;
+
+  @media (min-width: $tablets) {
+    padding-top: 71px;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-bottom: 82px;
+  }
+
+  @media (min-width: $desktops) {
+    padding-top: 76px;
+    padding-bottom: 94px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.advantages__wrapper--big{
+  @include container;
+
+  @media (min-width: $tablets) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @media (min-width: $desktops) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 942px;
+  }
+}
+
+.advantages__lead {
+  margin-right: 12px;
+  padding-bottom: 39px;
+
+  @media (min-width: $tablets) {
+    padding-bottom: 68px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktops) {
+    padding-bottom: 63px;
+  }
+}
+
+.advantages__title {
+  font-family: $font-second;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 32px;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @media (min-width: $tablets) {
+    font-size: 32px;
+    line-height: 44px;
+    max-width: 543px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+   @media (min-width: $desktops) {
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 766px;
+  }
+}
+
+.advantages__wrapper {
+  @media (min-width: $tablets) {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+  }
+
+  @media (min-width: $desktops) {
+    justify-content: space-between;
+    justify-content: flex-start;
+  }
+}
+
+.advantages-options {
+  margin-bottom: 34px;
+
+  @media (min-width: $tablets) {
+    margin-left: 0;
+    margin-right: 39px;
+    max-width: 190px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktops) {
+    margin-left: 0;
+    margin-right: 50px;
+    max-width: 285px;
+    margin-bottom: 0;
+  }
+}
+
+.advantages-options--last {
+  margin-right: 0;
+  padding-right: 15px;
+  margin-bottom: 0;
+
+  @media (min-width: $desktops) {
+    padding-right: 0;
+  }
+}
+
+.advantages-options__title {
+  font-family: $font-second;
+  font-style: normal;
+  font-size: 17px;
+  line-height: 28px;
+  margin-top: 11px;
+  margin-bottom: 0;
+
+  @media (min-width: $tablets) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 35px;
+    margin-bottom: 0;
+  }
+}
+
+.advantages-options__text {
+  font-style: "Lora", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+  margin-top: 9px;
+  max-width: 270px;
+
+  @media (min-width: $tablets) {
+    margin-top: 9px;
+  }
+
+  @media (min-width: $desktops) {
+    margin-top: 10px;
+  }
+}
+
+.advantages-options--second {
+  @media (min-width: $desktops) {
+    margin-top: 30px;
+  }
+}

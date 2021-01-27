@@ -1,0 +1,157 @@
+.language {
+  display: block;
+  &--form,
+  &--sucsess {
+    display: none;
+  }
+  padding-right: 15px;
+  padding-bottom: 15px;
+  order: 3;
+  background-color: transparent;
+
+  @media (min-width: $tablets) {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@media (min-width: $desktops) {
+  margin-left: 216px;
+    width: 110px;
+    padding-left: 0;
+    padding-right: 0;
+    order: 2;
+  }
+}
+
+.language__link {
+  background-image: url("../img/Ukraine-flag-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom 10px left 12px;
+  display: inline-block;
+  // width: 109px;
+  border: 2px solid #CBCCCD;
+  border-radius: 50px;
+  text-align: center;
+  // padding-top: 14px;
+
+  &::after {
+    content: "";
+    position: relative;
+    display: block;
+    background-image: url("../img/black-arrow.png");
+    background-color: transparent;
+    background-repeat: no-repeat;
+    height: 9px;
+    width: 14px;
+    bottom: 11px;
+    left: 73px;
+  }
+}
+
+.language__link .open {
+  background-image: url("../img/Ukraine-flag-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom 10px left 12px;
+  height: 21px;
+  width: 21px;
+  display: inline-block;
+  width: 109px;
+  height: 48px;
+  border: 2px solid #CBCCCD;
+  border-radius: 50px;
+  text-align: center;
+  padding-top: 14px;
+
+  &::after {
+    content: "";
+    position: relative;
+    display: block;
+    background-image: url("../img/black-arrow.svg");
+    background-color: transparent;
+    background-repeat: no-repeat;
+    height: 9px;
+    width: 14px;
+    bottom: 11px;
+    left: 73px;
+  }
+}
+
+.language__option {
+  margin: 0;
+  padding: 0;
+  width: 109px;
+  list-style: none;
+  display: none;
+  color: #2F3438;
+  border: none;
+}
+
+.icon {
+    background: transparent;
+    height: 42px;
+    background: url("../img/Ukraine-flag-desktop.jpg") no-repeat 5px center;
+    font-size: 16px;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 10px;
+    margin-top: 4px;
+}
+
+.icon__link {
+  display: block;
+  width: 109px;
+  padding-top: 14px;
+  padding-left: 45px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #2F3438;
+  margin-right: 0;
+}
+
+.language__link {
+    display: inline-block;
+    width: 109px;
+    height: 48px;
+    padding-top: 12px;
+    padding-left: 15px;
+    font-size: 15px;
+    line-height: 20px;
+    cursor: pointer;
+    background: transparent url("../img/Ukraine-flag-desktop.jpg") no-repeat 18px center;
+}
+
+.language__link::after {
+  content: "";
+    position: relative;
+    display: block;
+    background-image: url("../img/black-arrow.svg");
+    background-color: transparent;
+    background-repeat: no-repeat;
+    height: 9px;
+    width: 14px;
+    bottom: 13px;
+    left: 63px;
+}
+
+.language.open .language__link {
+  background: transparent url("../img/Ukraine-flag-desktop.jpg") no-repeat 5px center;
+  color: #2F3438;
+  // border-bottom: 4px solid #1d9fcb;
+}
+
+.language.open .language__link::after {
+  content: "";
+    position: relative;
+    display: block;
+    background-image: url("../img/black-arrow.svg");
+    background-color: transparent;
+    background-repeat: no-repeat;
+    height: 9px;
+    width: 14px;
+    bottom: 13px;
+    left: 63px;
+}
+
+.language.open .language__option {
+  display: block;
+}
