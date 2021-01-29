@@ -1,0 +1,36 @@
+.preloader {
+  position: absolute;
+  top: 150px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 100vw;
+  height: 100vh;
+  background: transparent;
+  display: none;
+  opacity: 0;
+  transition: all 0.5s ease;
+  z-index: 99999999999999;
+}
+
+.preloader__inner {
+  position: absolute;
+  top: 405px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  line-height: 54px;
+  text-align: center;
+  font-size: 52px;
+  font-family: $font-second;
+  font-weight: 300;
+  color: #0C527A;
+}
+
+.show {
+  display: block;
+  opacity: 1;
+  transition: all 0.5s ease;
+}

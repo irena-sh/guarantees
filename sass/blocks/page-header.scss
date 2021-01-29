@@ -1,0 +1,147 @@
+.page-header {
+  position: absolute;
+  background-color: transparent;
+  color: $white;
+  padding-bottom: 23px;
+  border-bottom: 1px solid rgba(255,255,255, 0.3);
+  width: 100%;
+  z-index: 2;
+
+  @media (min-width: $tablets) {
+    min-height: 110px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: none;
+  }
+
+  @media (min-width: $desktops) {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-bottom: 0;
+  }
+
+  &--form,
+  &--sucsess {
+    border: none;
+
+    @media (min-width: $tablets) {
+      margin-bottom: 48px;
+    }
+
+    @media (min-width: $desktops) {
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.page-header__wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  @media (min-width: $tablets) {
+    border-bottom: 1px solid rgba(255,255,255, 0.3);
+    padding-bottom: 27px;
+    margin-left: 45px;
+    margin-right: 45px;
+  }
+
+  @media (min-width: $desktops) {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+    width: 942px;
+    padding-bottom: 29px;
+  }
+}
+
+.page-header__logo {
+  display: inline-block;
+  margin-left: 15px;
+  margin-top: 18px;
+  height: 45px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 12px;
+
+  @media (min-width: $tablets) {
+    height: 60px;
+    margin-left: 0;
+  }
+
+  @media (min-width: $desktops) {
+    padding-left: 0;
+    margin-right: 24px;
+    margin-top: 24px;
+  }
+}
+
+.page-header__logo:hover {
+  cursor: pointer;
+}
+
+.page-header__phone {
+  font-family: Lora;
+  font-size: 15px;
+  line-height: 24px;
+  height: 16px;
+  left: 85px;
+  bottom: 32px;
+  margin-top: 30px;
+  margin-right: 22px;
+
+  @media (min-width: $tablets) {
+    font-size: 20px;
+    right: 26px;
+    top: 6px;
+    margin-right: 0;
+    margin-top: 37px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      background-image: url("../img/phone.png");
+      background-repeat: no-repeat;
+      height: 24px;
+      width: 24px;
+      right: 212px;
+      top: 37px;
+    }
+  }
+
+  @media (min-width: $desktops) {
+    font-size: 20px;
+    line-height: 24px;
+    padding-left: 150px;
+    margin-top: 20px;
+    display: inline-block;
+
+    &--form,
+    &--sucsess {
+      padding-left: 536px;
+    }
+
+    &::before {
+      content: "";
+      position: relative;
+      display: block;
+      background-image: url("../img/phone.png");
+      background-repeat: no-repeat;
+      height: 24px;
+      width: 24px;
+      right: 33px;
+      top: 24px;
+    }
+  }
+}
+
+.page-header__number {
+  margin: 0;
+}

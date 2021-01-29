@@ -1,0 +1,34 @@
+.main-nav {
+  padding-top: 34px;
+
+  @media (max-width: $tablets-max) {
+    display: none;
+  }
+}
+
+.main-nav__menu {
+  @media (min-width: $desktops) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 260px;
+    list-style: none;
+    padding-left: 0;
+  }
+}
+
+.main-nav__link {
+  @media (min-width: $desktops) {
+    padding-right: 16px;
+    text-decoration: underline;
+    text-decoration-color: rgba(255,255,255, 0.3);
+    text-underline-position: under;
+    color: $white;
+  }
+
+  &[href]:hover,
+  &[href]:focus {
+    color: $orange;
+    text-decoration-color: $orange;
+  }
+}

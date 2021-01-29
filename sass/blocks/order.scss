@@ -1,0 +1,48 @@
+.order {
+  &--form {
+    display: none;
+  }
+  padding-right: 15px;
+  order: 4;
+
+  @media (min-width: $tablets) {
+    padding-left: 40px;
+    padding-right: 0;
+  }
+
+  @media (min-width: $desktops) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.order-btn {
+  width: 204px;
+  display: inline-block;
+  vertical-align: top;
+  border: none;
+  font-family: $font;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  border: 2px solid #D9885E;
+  border-radius: 30px;
+  color: #D9885E;
+  background-color: transparent;
+  font-size: 15px;
+  line-height: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 31px;
+  padding-right: 31px;
+
+  &:hover,
+  &:focus {
+      color: $white;
+      background-color: #D9885E;
+    }
+
+    &:active {
+      color: rgba($white, 0.3);
+    }
+}

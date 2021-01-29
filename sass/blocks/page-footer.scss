@@ -1,0 +1,106 @@
+.page-footer {
+  &--form,
+  &--sucsess {
+    margin-bottom: 38px;
+  }
+
+  @include container;
+  padding-top: 32px;
+  margin-bottom: 44px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablets) {
+    padding-top: 34px;
+    // display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-right: 45px;
+    padding-left: 45px;
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: $desktops) {
+    padding-top: 34px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 942px;
+  }
+}
+
+.page-footer__wrapper {
+  @media (min-width: $tablets) {
+    // max-width: 241px;
+  }
+}
+
+.page-footer__pic {
+  // padding-bottom: 29px;
+}
+
+.page-footer__logo {
+  padding-right: 15px;
+  order: 1;
+
+  @media (min-width: $tablets) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @media (min-width: $desktops) {
+    padding-left: 0;
+}
+}
+
+.page-footer__logo:hover {
+  color: $pink;
+}
+
+.page-footer--img {
+  @media (min-width: $tablets) {
+    padding-right: 17px;
+  }
+}
+
+.page-footer--text {
+  margin-top: 0;
+  position: relative;
+  bottom: 42px;
+  left: 72px;
+
+  @media (min-width: $tablets) {
+    left: 65px;
+    bottom: 37px;
+  }
+
+   @media (min-width: $desktops) {
+    left: 73px;
+    bottom: 41px;
+}
+}
+
+// .order-btn {
+//   @media (min-width: $desktops) {
+//     width: 100%;
+//     display: inline-block;
+//     vertical-align: top;
+//     border: none;
+//     font-family: $font;
+//     text-decoration: none;
+//     outline: none;
+//     cursor: pointer;
+//     border: 2px solid #D9885E;
+//     border-radius: 30px;
+//     color: #D9885E;
+//     background-color: transparent;
+//     font-size: 15px;
+//     line-height: 24px;
+//     padding-top: 13px;
+//     padding-bottom: 13px;
+//     padding-left: 32px;
+//     padding-right: 32px;
+//   }
+// }

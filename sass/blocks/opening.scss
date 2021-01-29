@@ -1,0 +1,66 @@
+.opening {
+  font-family: $font-second;
+  font-style: normal;
+  font-size: 28px;
+  padding-top: 38px;
+  padding-left: 0;
+
+  @media (min-width: $tablets) {
+    max-width: 427px;
+    font-family: $font-second;
+    font-size: 46px;
+    line-height: 57px;
+    margin-right: 98px;
+  }
+
+  @media (min-width: $desktops) {
+    line-height: 59px;
+    max-width: 532px;
+    margin-left: 0;
+    margin-right: 230px;
+    padding-top: 113px;
+  }
+}
+
+.opening-form {
+  @include container;
+  font-family: $font-second;
+  font-style: normal;
+  font-size: 28px;
+  padding-top: 41px;
+
+  @media (min-width: $tablets) {
+    min-width: 495px;
+    font-size: 54px;
+    line-height: 64px;
+    padding-top: 0;
+    padding-left: 45px;
+  }
+
+  @media (min-width: $desktops) {
+    padding-left: 0;
+  }
+}
+
+.opening-sucsess {
+  @include container;
+  width: 290px;
+  font-family: $font-second;
+  font-style: normal;
+  font-size: 28px;
+  padding-top: 41px;
+  padding-right: 15px;
+
+  @media (min-width: $tablets) {
+    min-width: 495px;
+    font-family: Lora;
+    font-size: 54px;
+    line-height: 64px;
+    padding-left: 45px;
+    padding-top: 0;
+  }
+
+  @media (min-width: $desktops) {
+    padding-left: 0;
+  }
+}

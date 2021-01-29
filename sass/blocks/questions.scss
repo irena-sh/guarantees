@@ -1,0 +1,254 @@
+.questions {
+  margin-top: 65px;
+  padding-right: 0px;
+  padding-left: 0px;
+  line-height: 24px;
+
+  @media (min-width: $tablets) {
+    margin-top: 76px;
+  }
+
+  @media (min-width: $desktops) {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 942px;
+    margin-top: 13px;
+  }
+}
+
+ul {
+  padding-inline-start: 16px;
+}
+
+.questions__title {
+  @include container;
+  font-style: "Lora", sans-serif;
+  font-size: 22px;
+  line-height: 32px;
+
+  @media (min-width: $tablets) {
+    font-size: 32px;
+    line-height: 44px;
+    margin-bottom: 14px;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  @media (min-width: $desktops) {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 9px;
+  }
+}
+
+.questions__item {
+  padding-bottom: 32px;
+  border-bottom: 1px solid #E6E6E6;
+  font-style: $font;
+
+  @media (min-width: $desktops) {
+    padding-bottom: 13px;
+  }
+}
+
+.questions__list {
+  @include container;
+  @media (min-width: $tablets) {
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  @media (min-width: $desktops) {
+    min-width: 620px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.questions__text {
+  line-height: 24px;
+  font-style: normal;
+  margin-bottom: 0;
+  margin-top: 0;
+  max-width: 280px;
+  display: none;
+  overflow: hidden;
+
+  @media (min-width: $tablets) {
+    max-width: 360px;
+  }
+
+  @media (min-width: $desktops) {
+    max-width: 697px;
+  }
+}
+
+.questions__text p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.questions__title--headline {
+  font-family: $font-second;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 32px;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @media (min-width: $tablets) {
+    font-size: 32px;
+    line-height: 44px;
+  }
+}
+
+.questions__headline {
+  font-family: $font-second;
+  font-style: normal;
+  font-size: 17px;
+  line-height: 24px;
+  padding-top: 22px;
+  max-width: 240px;
+
+  @media (min-width: $tablets) {
+    font-size: 20px;
+    line-height: 24px;
+    max-width: 372px;
+  }
+
+  @media (min-width: $desktops) {
+    padding-top: 38px;
+    max-width: 413px;
+  }
+}
+
+.questions__item--last {
+  @media (min-width: $desktops) {
+    padding-bottom: 72px;
+  }
+}
+
+.questions__btn {
+  position: relative;
+  left: 270px;
+  bottom: 45px;
+  background-image: url("../img/grey-arrow.png");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  height: 12px;
+  width: 20px;
+  color: white;
+  font-size: 0;
+  border: none;
+  cursor: pointer;
+  outline: none;
+
+  &:hover {
+      opacity: 0.6;
+    }
+
+    &:active,
+    &:focus {
+      opacity: 0.5;
+    }
+
+  @media (min-width: $tablets) {
+  position: relative;
+  left: 655px;
+  bottom: 22px;
+  background-image: url("../img/grey-arrow.png");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  height: 12px;
+  width: 20px;
+  color: white;
+  font-size: 0;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  }
+
+   @media (min-width: $desktops) {
+  position: relative;
+  left: 918px;
+  bottom: 25px;
+  background-image: url("../img/grey-arrow.png");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  height: 12px;
+  width: 20px;
+  color: white;
+  font-size: 0;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  }
+}
+
+.two-two {
+  bottom: 25px;
+}
+
+.questions__headline--item {
+  @media (min-width: $tablets) {
+    max-width: 365px;
+    padding-bottom: 25px;
+  }
+}
+
+.questions__headline--strong {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 17px;
+  font-weight: bold;
+  opacity: 0.85;
+  color: #2F3438;
+  font-style: $font;
+
+  @media (min-width: $tablets) {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0;
+    padding-top: 0;
+  }
+}
+
+.questions__headline--text {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.questions__docs {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #2F3438;
+
+  @media (min-width: $tablets) {
+    padding-top: 25px;
+    margin-top: 0;
+  }
+
+  @media (min-width: $desktops) {
+    padding-bottom: 103px;
+    margin-bottom: 0;
+  }
+}
+
+.questions__list--text {
+  @media (min-width: $tablets) {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+}
+
+.questions__list--item {
+  padding-bottom: 20px;
+}

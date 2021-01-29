@@ -1,0 +1,205 @@
+.price {
+  position: relative;
+  background-color: $white;
+  color: #96a0a7;
+  margin-bottom: 0;
+  bottom: 79px;
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  padding-bottom: 28px;
+  margin-right: 15px;
+  margin-left: 15px;
+
+  @media (max-width: $phones-max) {
+    text-align: center;
+  }
+
+  @media (min-width: $tablets) {
+    margin-left: 45px;
+    margin-right: 45px;
+    bottom: 85px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktops) {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 30px;
+    bottom: 100px;
+    width: 942px;
+  }
+}
+
+.price__pic--img {
+  position: absolute;
+  top: -30px;
+  right: 111px;
+
+  @media (min-width: $tablets) {
+    left: 28px;
+    top: -30px;
+  }
+}
+
+.price__wrapper-main {
+  border-top: 8px solid $orange;
+  border-radius: 10px;
+
+  @media (min-width: $tablets) {
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+  }
+}
+
+.price__wrapper {
+  font-size: $font-size;
+  font-weight: 300;
+  line-height: 24px;
+  padding-bottom: 22px;
+  margin-left: 18px;
+  margin-right: 22px;
+
+  @media (min-width: $tablets) {
+    min-width: 364px;
+    margin-right: 37px;
+    margin-left: 29px;
+    padding-bottom: 24px;
+  }
+
+  @media (min-width: $desktops) {
+    margin-right: 37px;
+    padding-bottom: 0;
+    margin-left: 30px;
+    padding-bottom: 28px;
+  }
+}
+
+.price__count {
+  @media (min-width: $tablets) {
+    padding-right: 30px;
+    padding-top: 61px;
+  }
+}
+
+.price__count-btn {
+  display: inline-block;
+  vertical-align: top;
+  border: none;
+  font-family: $font;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  border: 2px solid $orange;
+  border-radius: 50px;
+  color: $orange;
+  background-color: transparent;
+  font-size: 15px;
+  line-height: 24px;
+  padding: 10px 56px;
+
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: #D9885E;
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+  }
+
+  @media (min-width: $tablets) {
+    padding: 10px 55px;
+  }
+}
+
+.price__sum {
+  color: $grey-dark;
+  font-family: Lora;
+  font-size: 20px;
+  line-height: 24px;
+  padding-bottom: 11px;
+
+   @media (min-width: $desktops) {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    text-align: left;
+  }
+}
+
+.price__text {
+  font-family: $font;
+  font-size: 12px;
+  line-height: 24px;
+  padding-bottom: 4px;
+  padding-top: 34px;
+
+  @media (min-width: $tablets) {
+    padding-top: 36px;
+    padding-bottom: 5px;
+  }
+}
+
+.price__instrument-range {
+  position: relative;
+  height: 14px;
+  width: 248px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+
+  margin: 0;
+  padding: 0;
+  min-height: 16px;
+  background-color: transparent;
+  outline: none;
+  appearance: none;
+
+  &::-webkit-slider-runnable-track {
+    width: 240px;
+    height: 1px;
+    background: #939DA5;
+    cursor: pointer;
+
+    animate: 0.2s;
+  }
+
+  &::-webkit-slider-thumb {
+    box-sizing: content-box;
+    width: 16px;
+    height: 16px;
+    margin-top: -10px;
+    background: $white;
+    border: 3px solid $orange;
+    border-radius: 50%;
+    cursor: pointer;
+
+    appearance: none;
+  }
+
+  &:focus::-webkit-slider-runnable-track {
+    outline: none;
+  }
+
+  &::-ms-track {
+    width: 240px;
+    height: 2px;
+    color: transparent;
+    background: transparent;
+    border-width: 0;
+    border-color: transparent;
+    cursor: pointer;
+    animate: 0.2s;
+  }
+
+  @media (min-width: $tablets) {
+    width: 388px;
+    padding-top: 0;
+    padding-bottom: 6px;
+  }
+
+  @media (min-width: $desktops) {
+    width: 654px;
+  }
+}
